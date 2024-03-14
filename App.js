@@ -106,11 +106,16 @@ export default function App() {
   }
   return (
     <>
-      <NavigationContainer>
+      {/* <NavigationContainer>
         <Stack.Navigator>
           <Stack.Screen name='Home' component={HomeScreen} />
           <Stack.Screen name='Detail' component={DetailsScreen} />
-          {/* <View style={styles.container}>
+        </Stack.Navigator >
+      </NavigationContainer > */}
+
+
+
+      <View style={styles.container}>
         <View style={styles.viewTop} >
           <View>
             <Image source={require('./assets/heo.jpeg')} style={styles.image} />
@@ -146,9 +151,7 @@ export default function App() {
             )
           })}
         </View>
-      </View> */}
-        </Stack.Navigator>
-      </NavigationContainer>
+      </View>
     </>
   );
 }
